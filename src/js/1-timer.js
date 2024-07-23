@@ -55,7 +55,7 @@ function onStartTimer() {
 
     if (differenceData < 1000) {
       clearInterval(counting);
-      dataInput.disabled = false;
+      calendarInput.disabled = false;
     }
   }, 1000);
 }
