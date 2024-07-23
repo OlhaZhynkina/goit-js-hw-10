@@ -9,9 +9,41 @@
     <link rel="stylesheet" href="./css/reset.css" />
   </head>
   <body>
-    <section>
+    <section class="back">
       <a href="./index.html">Go to home</a>
-      <script type="module" src="./js/2-snackbar.js"></script>
     </section>
+    <form class="form">
+      <label class="delay-label">
+        Delay (ms)
+        <input class="del-input" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="state-input">
+        <legend>State</legend>
+        <label>
+          <input
+            class="radio-input"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          Fulfilled
+        </label>
+        <label>
+          <input
+            class="radio-input"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="sub-btn" type="submit">Create notification</button>
+    </form>
+    <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
